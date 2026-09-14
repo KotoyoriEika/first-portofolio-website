@@ -1,9 +1,4 @@
-// ===== TUGAS JAVASCRIPT: TOGGLE DARK MODE =====
-// Logika:
-// 1. Saat halaman dibuka, cek preferensi mode yang tersimpan di localStorage.
-// 2. Terapkan class "dark" ke <html> sesuai preferensi tersebut (default: dark).
-// 3. Saat tombol diklik, mode dibalik (dark <-> light) dan disimpan lagi
-//    supaya tetap konsisten walau pindah ke halaman lain.
+
 
 const htmlEl = document.documentElement;
 const toggleBtn = document.getElementById("darkModeToggle");
@@ -22,7 +17,7 @@ function applyTheme(theme) {
   }
 }
 
-// Ambil preferensi tersimpan, default-nya "dark"
+// default dark
 const savedTheme = localStorage.getItem("theme") || "dark";
 applyTheme(savedTheme);
 
